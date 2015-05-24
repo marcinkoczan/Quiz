@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Wybierz odpowiedź!</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_wyswietlenie_wyniku">Rozpocznij grę ponownie!</string>
+    <string name="title_activity_menu">menu</string>
+    <string name="title_activity_dodawanie_pytan">Dodawanie pytań</string>
+    <string name="nowe_pytania">Dodaj nowe pytanie!</string>
+</resources>

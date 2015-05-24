@@ -1,0 +1,4 @@
+configurations.create("default")
+artifacts.add("default", file('osmdroid-android-4.0.jar'))
+dependencies {
+}

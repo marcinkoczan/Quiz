@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.marcinkoczan.bazatutorial" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.location_hardware"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="myapp.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".menu"
+            android:label="@string/title_activity_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Start"
+            android:label="@string/app_name" >
+            android:parentActivityName=".menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.marcinkoczan.bazatutorial.menu" />
+        </activity>
+        <activity
+            android:name=".wyswietlenieWyniku"
+            android:label="@string/title_activity_wyswietlenie_wyniku"
+            android:parentActivityName=".Start" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.marcinkoczan.bazatutorial.Start" />
+        </activity>
+        <activity
+            android:name=".dodawanie_pytan"
+            android:label="@string/title_activity_dodawanie_pytan"
+            android:parentActivityName=".Start" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.marcinkoczan.bazatutorial.Start" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,4 @@
+configurations.create("default")
+artifacts.add("default", file('slf4j-jdk14-1.5.8.jar'))
+dependencies {
+}
